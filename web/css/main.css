@@ -6,7 +6,20 @@ body {
     color: #333333;
     background-color: #ffffff;
 }
-
+.main{
+    background: #E4F1FE;
+}
+.mywell{
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px #CCC;
+    border: 1px solid #E9E9E9;
+    border-bottom: 0;
+}
+h1, h2{
+    font-weight: normal!important;
+}
 .mycontainer {
     width: 900px;
     padding: 10px 0;

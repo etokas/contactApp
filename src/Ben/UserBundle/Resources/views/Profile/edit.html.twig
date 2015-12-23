@@ -1,0 +1,27 @@
+{% extends "BenUserBundle::layout.html.twig" %}
+
+
+{% block container %}
+<h1>Account</h1>
+    {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
+
+<fieldset>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Username</label>
+            {{ form_widget(form.username, { 'attr': {'class': 'form-control'} }) }}
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+            {{ form_widget(form.email, { 'attr': {'class': 'form-control'} }) }}
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Current Password</label>
+            {{ form_widget(form.current_password, { 'attr': {'class': 'form-control'} }) }}
+    </div>
+      {{ form_rest(form) }}
+    <button class="btn btn-sm btn-success" type="submit">Update</button>
+    <a class="btn btn-sm btn-success" href="{{ path('fos_user_change_password') }}">Change Password</a>
+</fieldset>
+
+    {{ form_end(form) }}
+{% endblock container %}

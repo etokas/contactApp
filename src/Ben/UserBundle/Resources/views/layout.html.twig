@@ -43,9 +43,11 @@
         <div class="mycontainer">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="sidebar well">
-                        <h2><i class="fa fa-user"></i> Profile</h2>
+                    <div class="sidebar mywell">
+                        <h3><i class="fa fa-user"></i> Profile</h3>
+                        <hr>
                         <ul class="list-unstyled">
+                            <li><b>login</b> : @{{ app.user.username }}</li><hr>
                             <li><b>firstName</b> : {{ app.user.firstName }}</li><hr>
                             <li><b>lastName</b> : {{ app.user.lastName }}</li><hr>
                             <li><b>email</b> : {{ app.user.email }}</li><hr>
@@ -59,7 +61,9 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-                    {% block container %} {% endblock container %}
+                    <div class="mywell">
+                        {% block container %} {% endblock container %}
+                    </div>
                 </div>
             </div>
         </div>
