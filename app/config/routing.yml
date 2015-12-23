@@ -1,0 +1,9 @@
+ben_user:
+    resource: "@BenUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+#REST
+Rest_User :
+  type : rest
+  resource: "@BenUserBundle/Resources/config/routing_rest.yml"
+  prefix : /api

@@ -1,0 +1,9 @@
+L'objectif de cet exercice est de développer une petite application Web simulant un carnet d'adresses en ligne sous symfony2.
+
++ Identification (Inscription/Connexion/Déconnexion) de l'utilisateur par login/mot de passe (FOSUserbundle).
++ Afficher/Modifier ses informations (e-mail / adresse / téléphone / site web).
++ Ajouter/Afficher/Lister/Supprimer les membres de son carnet d'adresses (membres qui devront être préalablement inscrits sur le site).
++ sur une route /api/users, via fosRestBundle, retourner en json la liste de tous les utilisateurs avec (login et e-mail)
++ sur une route /api/users/:id via fosRestBundle retourner en json la liste de tous les utilisateurs avec toutes leurs infos (email adresse telephone login et site web)
+
+Nous te demandons de détailler soigneusement: les routes, les entités, les relations, les héritages, les actions et les vues si tu n'y parviens pas ou décides de renoncer, dis le nous ;-)

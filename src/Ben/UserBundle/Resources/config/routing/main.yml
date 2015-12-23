@@ -1,0 +1,22 @@
+friends:
+    path:     /
+    defaults: { _controller: "BenUserBundle:Main:getFriends" }
+
+add_friends:
+    path:     /friends/add
+    defaults: { _controller: "BenUserBundle:Main:addFriends" }
+    requirements: { _method: post }
+
+delete_friends:
+    path:     /friends/delete
+    defaults: { _controller: "BenUserBundle:Main:deleteFriends" }
+    requirements: { _method: post }
+
+edit_me:
+    path:     /editMe
+    defaults: { _controller: "BenUserBundle:Main:editMe" }
+
+update_me:
+    path:     /updateMe
+    defaults: { _controller: "BenUserBundle:Main:updateMe" }
+    requirements: { _method: post }

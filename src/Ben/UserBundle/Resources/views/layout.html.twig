@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <title>Contact app</title>
+
+    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}">
+</head>
+ {% block body %}
+<body>
+    <section id="headerMenu">
+        <div class="mycontainer">
+            <a id="logo" href="#">AppContact</a>
+            <div class="mynavbar clearfix">
+                <ul>
+                    <li><a href="/">Profil</a></li>
+                    <li><a href="/friends">contact</a></li>
+                    <li class="searach-box">
+                        <form action="">
+                            <input type="text" class="search-field hide">
+                            <div>
+                                <a href="" class="fa fa-search"></a>
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="" class="fa fa-ellipsis-v"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="mycontainer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sidebar well">
+                        <h2><i class="fa fa-user"></i> Profile</h2>
+                        <ul class="list-unstyled">
+                            <li><b>firstName</b> : {{ app.user.firstName }}</li><hr>
+                            <li><b>lastName</b> : {{ app.user.lastName }}</li><hr>
+                            <li><b>email</b> : {{ app.user.email }}</li><hr>
+                            <li><b>phoneNumber</b> : {{ app.user.phoneNumber }}</li><hr>
+                            <li><b>address</b> : {{ app.user.address }}</li>
+                        </ul>
+                        <hr>
+                        <a href="{{ path('edit_me') }}" class="btn btn-default btn-block">Edit profile</a>
+                        <a href="{{ path('fos_user_profile_edit') }}" class="btn btn-default btn-block">Edit account</a>
+                        <a href="{{ path('fos_user_security_logout') }}" class="btn btn-danger btn-block">logout</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    {% block container %} {% endblock container %}
+                </div>
+            </div>
+        </div>
+    </section>
+ </body>
+ {% endblock body %}
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</html>

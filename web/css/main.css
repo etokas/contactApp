@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.mycontainer {
+    width: 900px;
+    padding: 10px 0;
+    margin: auto;
+    position: relative;
+}
+.login-container{
+    margin-top: 100px;
+}
+#headerMenu {
+    background: #fff;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+#logo {
+    margin-top: 8px;
+    color: #2ecc71;
+    font-size: 28px;
+    text-decoration: none!important;
+}
+#logo:hover{
+    color: #27ae60;
+}
+
+.mynavbar {
+    float: right;
+    margin: 0;
+}
+
+.mynavbar ul>li {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.mynavbar li a {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    color: #8E8E8E;
+    text-transform: capitalize;
+}
+.mynavbar li a:hover{
+    color: #27ae60;
+}
