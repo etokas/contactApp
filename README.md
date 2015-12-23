@@ -1,4 +1,12 @@
 contactApp
 ==========
 
-A Symfony project created on December 22, 2015, 7:27 pm.
+##intall dependencies
+`composer install`
+
+##load data
+`php bin/console doctrine:database:create`
+`php bin/console doctrine:schema:update --force`
+`php bin/console doctrine:fixtures:load`
+
+
